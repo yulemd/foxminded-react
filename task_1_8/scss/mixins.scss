@@ -1,0 +1,15 @@
+@mixin bg-primery {
+    background: linear-gradient(1.02deg, #4A99D3 -17.33%, rgba(74, 153, 211, 0) 75.91%), #FFFFFF;
+    opacity: 0.2;
+    transform: rotate(-180deg);
+}
+@mixin position-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin position-flex-column {
+    display: flex;
+    flex-direction: column;
+}

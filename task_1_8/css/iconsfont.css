@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('../fonts/icon.eot?dbegqa');
+  src:  url('../fonts/icon.eot?dbegqa#iefix') format('embedded-opentype'),
+    url('../fonts/icon.ttf?dbegqa') format('truetype'),
+    url('../fonts/icon.woff?dbegqa') format('woff'),
+    url('../fonts/icon.svg?dbegqa#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, 
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-appStore:before {
+  content: "\e900";
+}
+._icon-chevron-left:before {
+  content: "\e902";
+}
+._icon-chevron-right:before {
+  content: "\e903";
+}
+._icon-facebook:before {
+  content: "\e904";
+}
+._icon-instagram:before {
+  content: "\e905";
+}
+._icon-quotes:before {
+  content: "\e906";
+}
+._icon-twitter:before {
+  content: "\e908";
+}
