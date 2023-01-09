@@ -15,15 +15,21 @@
         <section class="main">
             <header class="main__header">
                 <div class="main__logo"><a href="#" class="main__logoLink">LOGO</a></div>
-                <ul class="main__menu">
-                    <li><a href="#" class="main__menuLink main--active">Home</a></li>
-                    <li><a href="#" class="main__menuLink">About</a></li>
-                    <li><a href="#" class="main__menuLink">Contact Us</a></li>
-                </ul>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                      <span></span>
+                    </label>
+                    <ul class="main__menu">
+                        <li><a href="#" class="main__menuLink main--active">Home</a></li>
+                        <li><a href="#" class="main__menuLink">About</a></li>
+                        <li><a href="#" class="main__menuLink">Contact Us</a></li>
+                    </ul>
+                </div>
             </header>
             <div class="main__content">
                 <div class="main__contentText">
-                    <h1 class="main__contentTitle">New E-commerce App best for You</h1>
+                    <h1 class="main__contentTitle">New <span>E-commerce</span> App best for You</h1>
                     <p class="main__contentDesc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Quo architecto laboriosam error eligendi odit 
