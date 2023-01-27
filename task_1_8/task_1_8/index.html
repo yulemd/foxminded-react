@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="fonts/objective.css">
     <link rel="stylesheet" href="css/iconsfont.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="libs/fontawesome/css/all.css">
 </head>
 <body>
     <div class="container">
@@ -16,14 +15,14 @@
             <header class="main__header">
                 <div class="main__logo"><a href="#" class="main__logoLink">LOGO</a></div>
                 <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" type="checkbox" class="menu__toggle"/>
                     <label class="menu__btn" for="menu__toggle">
                       <span></span>
                     </label>
-                    <ul class="main__menu">
-                        <li><a href="#" class="main__menuLink main--active">Home</a></li>
-                        <li><a href="#" class="main__menuLink">About</a></li>
-                        <li><a href="#" class="main__menuLink">Contact Us</a></li>
+                    <ul class="main__menu menu">
+                        <li><a href="#" class="menu__link main--active">Home</a></li>
+                        <li><a href="#" class="menu__link">About</a></li>
+                        <li><a href="#" class="menu__link">Contact Us</a></li>
                     </ul>
                 </div>
             </header>
@@ -37,68 +36,68 @@
                         minima eveniet.
                     </p>
                     <div class="main__contentBtns">
-                        <a href="#"><img src="img/googlePay.png" alt="btn-googlePlay"></a>
-                        <a href="#"><img src="img/appStore.png" alt="btn-appStore"></a>
+                        <a href="#"><img src="img/googlePlay.svg" alt="btn-googlePlay"></a>
+                        <a href="#"><img src="img/appStore.svg" alt="btn-appStore"></a>
                     </div>
                 </div>
                 <div class="main__contentImg">
-                    <img src="img/mockup1-middle.png" alt="image">
-                    <img src="img/mockup1-large.png" alt="image">
+                    <img src="img/mockup1-middle.svg" alt="image">
+                    <img src="img/mockup1-large.svg" alt="image">
                 </div>
             </div>
         </section>
         <section class="about">
             <div class="about__cards">
-                <div class="about__send">
-                    <div class="card">
-                        <img src="img/send.png" alt="image" class="about__sendImg">
-                        <h4 class="about__sendTitle">Send</h4>
-                        <p class="about__sendText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <div class="about__send card">
+                    <div class="card__item">
+                        <img src="img/send.svg" alt="image" class="card__img">
+                        <h4 class="card__title">Send</h4>
+                        <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Accusantium itaque, magnam quo rem ab delectus quia dolores 
                             officia nostrum minus.</p>
-                        <a href="#" class="about__sendLink">Learn more <img src="img/forward.png" alt="icon"></a>   
+                        <a href="#" class="card__link">Learn more <img src="img/forward.svg" alt="icon" class="card__linkImg"></a>   
                     </div>
                 </div>
-                <div class="about__receive">
+                <div class="about__receive card">
                     <h2 class="about__title">What we do to help our customers in digital era.</h2>
-                    <div class="card">
-                        <img src="img/receive.png" alt="image" class="about__receiveImg">
-                        <h4 class="about__receiveTitle">Receive</h4>
-                        <p class="about__receiveText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    <div class="card__item">
+                        <img src="img/receive.svg" alt="image" class="card__img">
+                        <h4 class="card__title">Receive</h4>
+                        <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Accusantium itaque, magnam quo rem ab delectus quia dolores 
                             officia nostrum minus.</p>
-                        <a href="#" class="about__receiveLink">Learn more <img src="img/forward.png" alt="icon"></a>
+                        <a href="#" class="card__link">Learn more <img src="img/forward.svg" alt="icon" class="card__linkImg"></a>
                     </div>
                 </div>
-                <div class="about__buy">
-                    <div class="card">
-                        <img src="img/buy.png" alt="image" class="about__buyImg">
-                        <h4 class="about__buyTitle">Buy</h4>
-                        <p class="about__buyText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <div class="about__buy card">
+                    <div class="card__item">
+                        <img src="img/buy.svg" alt="image" class="card__img">
+                        <h4 class="card__title">Buy</h4>
+                        <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                             Accusantium itaque, magnam quo rem ab delectus quia dolores 
                             officia nostrum minus.</p>
-                        <a href="#" class="about__buyLink">Learn more <img src="img/forward.png" alt="icon"></a>
+                        <a href="#" class="card__link">Learn more <img src="img/forward.svg" alt="icon" class="card__linkImg"></a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="how-it-works">
             <h3 class="how-it-works__title">How it works</h3>
-            <div class="how-it-works__cards">
-                <div class="how-it-works__card">
-                    <img src="img/add-account.png" alt="icon" class="icon-account">
-                    <h5 class="title">Create an account</h5>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="how-it-works__cards how-card">
+                <div class="how-card__item">
+                    <img src="img/add-account.svg" alt="icon" class="how-card__icon">
+                    <h5 class="how-card__title">Create an account</h5>
+                    <p class="how-card__text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="how-it-works__card">
-                    <img src="img/authorization.png" alt="icon" class="icon-authorization">
-                    <h5 class="title">Get authorization</h5>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="how-card__item">
+                    <img src="img/authorization.svg" alt="icon" class="how-card__icon">
+                    <h5 class="how-card__title">Get authorization</h5>
+                    <p class="how-card__text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="how-it-works__card">
-                    <img src="img/smile.png" alt="icon" class="icon-enjoy">
-                    <h5 class="title">Enjoy the app</h5>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="how-card__item">
+                    <img src="img/smile.svg" alt="icon" class="how-card__icon">
+                    <h5 class="how-card__title">Enjoy the app</h5>
+                    <p class="how-card__text">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
         </section>
@@ -123,9 +122,9 @@
         <section class="download">
             <div class="download__content">
                 <div class="download__contentImg">
-                    <img src="img/mockup1-small.png" alt="image">
-                    <img src="img/mockup1-middle.png" alt="image">
-                    <img src="img/mockup1-small.png" alt="image">
+                    <img src="img/mockup1-small.svg" alt="image">
+                    <img src="img/mockup1-middle.svg" alt="image">
+                    <img src="img/mockup1-small.svg" alt="image">
                 </div>
                 <div class="download__contentText">
                     <h3 class="download__contentTitle">Download app to enjoy more!</h3>
@@ -136,7 +135,7 @@
                         minima eveniet.
                     </p>
                     <div class="download__contentBtns">
-                        <a href="#"><img src="img/gpay.png" alt="btn-googlePlay"></a>
+                        <a href="#"><img src="img/gplay.svg" alt="btn-googlePlay"></a>
                         <a href="#"><div class="appstore _icon-appStore"></div></a>
                     </div>
                 </div>
@@ -146,29 +145,29 @@
             <div class="footer__navbar navbar">
                 <div class="footer__logo"><a href="#" class="footer__logoLink">LOGO</a></div>
                 <ul class="navbar__menu">
-                    <li class="navbar__menuItem">
-                        <h6>Quick Links</h6> 
-                        <ul>
-                            <li><a href="#" class="navbar__menuList">Sign Up</a></li>
-                            <li><a href="#" class="navbar__menuList">About Us</a></li>
+                    <li class="navbar__menuItem submenu">
+                        <h6 class="submenu__title">Quick Links</h6> 
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Sign Up</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">About Us</a></li>
                         </ul>
                     </li>
-                    <li class="navbar__menuItem">
-                        <h6>Others</h6>
-                        <ul>
-                            <li><a href="#" class="navbar__menuList">User FAQs</a></li>
-                            <li><a href="#" class="navbar__menuList">Contact Us</a></li>
-                            <li><a href="#" class="navbar__menuList">Legal</a></li>
-                            <li><a href="#" class="navbar__menuList">Privacy Policy</a></li>
-                            <li><a href="#" class="navbar__menuList">Terms and Conditions</a></li>
+                    <li class="navbar__menuItem submenu">
+                        <h6 class="submenu__title">Others</h6>
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">User FAQs</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Contact Us</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Legal</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Privacy Policy</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Terms and Conditions</a></li>
                         </ul>
                     </li>
-                    <li class="navbar__menuItem">
-                        <h6>Products</h6>
-                        <ul>
-                            <li><a href="#" class="navbar__menuList">Send</a></li>
-                            <li><a href="#" class="navbar__menuList">Receive</a></li>
-                            <li><a href="#" class="navbar__menuList">Buy</a></li>
+                    <li class="navbar__menuItem submenu">
+                        <h6 class="submenu__title">Products</h6>
+                        <ul class="submenu__list">
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Send</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Receive</a></li>
+                            <li class="submenu__item"><a href="#" class="submenu__itemLink">Buy</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -184,7 +183,7 @@
             <div class="footer__copyright">
                 <p class="footer__copyrightText">Copyright © 2020. All rights reserved.</p>
                 <ul class="footer__socials">
-                    <li><a href="#"><img src="img/youtube.png" alt="icon"></a></li>
+                    <li><a href="#"><img src="img/youtube.svg" alt="icon"></a></li>
                     <li><a href="#" class="insta _icon-instagram"></a></li>
                     <li><a href="#" class="facebook _icon-facebook"></a></li>
                     <li><a href="#" class="twitter _icon-twitter"></a></li>

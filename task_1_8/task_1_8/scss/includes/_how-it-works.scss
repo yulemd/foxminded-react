@@ -1,0 +1,61 @@
+.how-it-works {
+    width: 100%;
+    min-height: 476px;
+    background-color: $bg-secondary;
+    padding: 96px 0;
+    @include for-tablet-portrait {
+        padding: 72px 0 36px;
+    }
+    &__title {
+        color: $font-blue;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 88px;
+    }
+    &__cards {
+        max-width: 952px;
+        margin: auto;
+        @include position-flex-row;
+        @include for-desktop-size {
+            max-width: 912px;
+        }
+        @include for-tablet-landscape {
+            max-width: 900px;
+            padding: 0 16px;
+        }
+        @include for-tablet-portrait {
+            flex-direction: column;
+        }
+        .how-card__item {
+            width: 224px;
+            height: 172px;
+            text-align: center;
+            @include for-tablet-portrait {
+                margin-bottom: 24px;
+            }
+            .how-card__icon {
+                width: 60px;
+                height: 60px;
+            }
+            .how-card__title {
+                color: $font-black;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 19px;
+                margin: 30px 0 10px;
+                @include for-tablet-portrait {
+                    margin: 10px 0;
+                }
+            }
+            .how-card__text {
+                color: $font-black;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                text-align: center;
+            }
+        }
+    }
+}

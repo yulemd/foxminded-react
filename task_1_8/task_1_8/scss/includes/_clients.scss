@@ -1,0 +1,162 @@
+.clients {
+    width: 100%;
+    min-height: 748px;
+    padding-right: 8px;
+    position: relative;
+    &::before{
+        content: "";
+        width: 154px;
+        height: 154px;
+        background-image: url(../img/dots-group.svg);
+        position: absolute;
+        top: 238px;
+        right: 0px;
+        z-index: -1;
+        @include for-mobile-size {
+            display: none;
+        }
+    }
+    &__title {
+        color: $font-black;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 27px;
+        text-align: center;
+        margin: 148px 0 0;
+        @include for-tablet-landscape {
+            margin-top: 64px;
+        }
+    }
+    &__slider {
+        max-width: 1196px;
+        height: 596px;
+        @include position-flex-row;
+        align-items: flex-end;
+        margin-top: -64px;
+        @include for-desktop-size {
+            width: 90%;
+        }
+        @include for-tablet-landscape {
+            flex-direction: column;
+            align-items: center;
+            margin: 140px 0 40px 0;
+        }
+        @include for-tablet-portrait {
+            margin-bottom: 160px;
+        }
+        .clients__image {
+            max-width: 672px;
+            height: 400px;
+            margin-right: 6px;
+            background-color: $bg-secondary;
+            border-radius: 0px 6px 6px 0px;
+            @include for-desktop-size {
+                width: 60%;
+            }
+            @include for-tablet-landscape {
+                width: 100%;
+                margin: 0 6px 32px -180px;
+            }
+            @include for-mobile-size {
+                width: 90%;
+                margin: 0 6px 32px -40px;
+            }
+        }
+        .clients__image img {
+            width: 400px;
+            height: 520px;
+            margin: -120px 100px 0 178px;
+            @include for-desktop-size {
+                margin: -120px 100px 0 178px;
+            }
+            @include for-tablet-landscape {
+                margin: -120px 100px 0 220px;
+            }
+            @include for-mobile-size {
+                width: 300px;
+                height: 390px;
+                margin: -90px 0 0 20%;
+            }
+        }
+        .clients__reviews {
+            width: 420px;
+            height: 360px;
+            @include position-flex-column;
+            justify-content: space-between;
+            margin-bottom: -40px;
+            @include for-desktop-size {
+                width: 360px;
+            }
+            @include for-mobile-size {
+                padding-left: 16px;
+            }
+        }
+        .clients__icon {
+            position: relative;
+            &::before {
+                color: #878787;
+                font-size: 50px;
+                opacity: 0.5;
+            }
+        }
+        .clients__review {
+            color: $font-black;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            opacity: 0.5;
+        }
+        .clients__name {
+            color: $font-black;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 19px;
+            @include for-tablet-portrait {
+                margin-top: 20px;
+            }
+        }
+        .clients__controls {
+            width: 160px;
+            height: 80px;
+            margin-left: 260px;
+            box-shadow: $box-shadow-controls;
+            @include position-flex-row;
+            @include for-mobile-size {
+                margin-left: 220px;
+            }
+            .toleft {
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-color: $bg-footer;
+                border-radius: 4px 0px 0px 4px;
+                text-decoration: none;
+                text-align: center;
+                &::before {
+                    width: 80px;
+                    height: 80px;
+                    text-align: center;
+                    line-height: 80px;
+                    color: $font-white;
+                    font-size: 40px;
+                }
+            }
+            .toright {
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-color: $bg-layout;
+                border-radius: 0px 4px 4px 0px;
+                text-decoration: none;
+                text-align: center;
+                &::before {
+                    width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    color: $font-blue;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

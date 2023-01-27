@@ -1,0 +1,30 @@
+@mixin bg-primery {
+    background: linear-gradient(1.02deg, #4A99D3 -17.33%, rgba(74, 153, 211, 0) 75.91%), #FFFFFF;
+    opacity: 0.2;
+    transform: rotate(-180deg);
+}
+@mixin position-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin position-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin for-main-image {
+  @media (max-width: 1260px) { @content; }
+}
+@mixin for-desktop-size {
+    @media (max-width: 1100px) { @content; }
+}
+@mixin for-tablet-landscape {
+    @media (max-width: 960px) { @content; }
+}
+@mixin for-tablet-portrait {
+    @media (max-width: 767px) { @content; }
+}
+@mixin for-mobile-size {
+    @media (max-width: 540px) { @content; }
+}

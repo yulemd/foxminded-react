@@ -1,0 +1,158 @@
+.footer {
+    width: 100%;
+    padding: 0 8px;
+    background-color: $bg-footer;
+    &__navbar {
+        max-width: 1196px;
+        min-height: 292px;
+        margin: auto;
+        @include position-flex-row;
+        align-items: flex-start;
+        padding-top: 54px;
+        @include for-desktop-size {
+            max-width: 1032px;
+        }
+        @include for-tablet-landscape {
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        & ul {
+            list-style: none;
+        }
+        & a {
+            text-decoration: none;
+            color: $font-white;
+        }
+        .navbar__menu {
+            max-width: 560px;
+            flex-grow: 2;
+            @include position-flex-row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            @include for-tablet-landscape {
+                min-width: 480px;
+                justify-content: space-between;
+                margin-bottom: 32px;
+            }
+            @include for-mobile-size {
+                min-width: 360px;
+                max-width: 508px;
+                justify-content: space-between;
+            }
+        }
+        .navbar__menuItem {
+            width: fit-content;
+            white-space: nowrap;
+            }
+        }
+        .submenu__title {
+            width: fit-content;
+            color: $font-white;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            border-bottom: 2px solid $font-white;
+            margin-bottom: 36px;
+        }
+        .submenu__item {
+            margin-bottom: 18px;
+        }
+        .submenu__itemLink {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            @include for-mobile-size {
+                white-space: normal;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &__logo {
+            @include for-tablet-landscape {
+                margin-bottom: 32px;
+            }
+    }
+    &__logoLink {
+        text-decoration: none;
+        color: $font-white;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 35px;
+    }
+    &__form {
+        width: 394px;
+        height: 122px;
+        @include position-flex-column;
+        @include for-mobile-size {
+            width: 374px;
+        }
+        .form__label {
+            color: $font-white;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
+        .form__inputs {
+            @include position-flex-row;
+        }
+        #email {
+            width: 268px;
+            height: 50px;
+            border-radius: 3px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px;
+            margin-right: 10px;
+            color: #00000080;
+            border: none;
+            @include for-mobile-size {
+                width: 248px;
+            }
+        }
+        .form__subscribe {
+            width: 116px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 17px;
+            color: $font-blue;
+            background-color: $bg-layout;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    &__line {
+        width: 100%;
+        height: 1px;
+        background-color: $bg-layout;
+    }
+    &__copyright {
+        max-width: 1196px;
+        height: 57px;
+        margin: auto;
+        @include position-flex-row;
+        @include for-desktop-size {
+            max-width: 1032px;
+        }
+        &Text {
+            color: $font-white;
+            font-weight: 700;
+            font-size: 10.41px;
+            line-height: 11px;
+        }
+        .footer__socials {
+            list-style: none;
+            width: 136px;
+            @include position-flex-row;
+            a {
+                text-decoration: none;
+                color: $font-white;
+                font-size: 16px;
+            }
+        }
+    }
+}
