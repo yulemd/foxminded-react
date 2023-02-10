@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  background-color: #4299E1;
+}
+.widget {
+  width: 320px;
+  margin: auto;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #dfe4e7;
+  font-size: 14px;
+  font-weight: 400;
+}
+.widget__search {
+  width: 100%;
+  margin-bottom: 32px;
+  color: #1b1b1b;
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 2px;
+  padding: 0 16px;
+}
+.search__input:focus {
+  outline: thin solid;
+}
+.search__list {
+  display: none;
+  width: 320px;
+  position: absolute;
+  top: 30px;
+  opacity: 0;
+}
+.search__item {
+  list-style: none;
+  width: 320px;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.search__item:hover {
+  background-color: #7daacf;
+}
+.display__block {
+  display: block;
+}
+.search__labelValue {
+  line-height: 16px;
+  font-weight: 700;
+}
+.widget__data {
+  width: 100%;
+}
+.data__current {
+  width: 100%;
+  height: 120px;
+  color: #ffffff;
+  background-color: #1A202C;
+  border-radius: 6px 6px 0 0;
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.current__temperatureReal {
+  font-size: 40px;
+  font-weight: 600;
+}
+.current__temperatureFeels {
+  font-size: 16px;
+  font-weight: 400;
+}
+.current__weatherReal {
+  font-size: 16px;
+  font-weight: 600;
+}
+.current__weatherWhere {
+  font-size: 16px;
+  font-weight: 400;
+}
+.current__icon {
+  display: block;
+  width: 60px;
+}
+.data__forecast {
+  width: 100%;
+  height: 372px;
+  background-color: #2D3748;
+  border-radius: 0 0 6px 6px;
+  padding: 16px;
+}
+.forecast__day {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.day__name {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 44px;
+}
+.day__icon {
+  width: 32px;
+}
+.day__weather {
+  width: 120px;
+}
+.day__temperature {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Widget</title>
+  <link rel="stylesheet" href="css/owfont-regular.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/modules/utils/variables.js"></script>
+  <script type="module" src="js/modules/utils/helperFunctions.js"></script>
+  <script type="module" src="js/modules/data/geoData.js"></script>
+  <script type="module" src="js/modules/data/currentData.js"></script>
+  <script type="module" src="js/modules/data/forecastData.js"></script>
+  <script type="module" src="js/modules/markup/markupGeo.js"></script>
+  <script type="module" src="js/modules/markup/markupCurrent.js"></script>
+  <script type="module" src="js/modules/markup/markupForecast.js"></script>
+  <script type="module" src="js/modules/render/renderElement.js"></script>
+  <script type="module" src="js/modules/render/renderSearchData.js"></script>
+  <script type="module" src="js/modules/render/renderCurrentData.js"></script>
+  <script type="module" src="js/modules/render/renderForecastData.js"></script>
+  <script type="module" src="js/modules/handlers/handleSearchResult.js"></script>
+  <script type="module" src="js/modules/handlers/handleInput.js"></script>
+  <script defer type="module" src="js/main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="widget">
+      <form action="GET" id="form" class="widget__search search">
+        <input 
+          type="search" 
+          id="widget-search" 
+          class="search__input" 
+          placeholder="Enter city..."
+        />
+        <ul class="search__list">
+
+        </ul>
+        <label for="widget-search" class="search__label">
+          Selected: <span class="search__labelValue">London, GB</span>
+        </label>
+      </form>
+      <div class="widget__data data">
+        <div class="data__current current">
+          
+        </div>
+        <div class="data__forecast forecast">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
