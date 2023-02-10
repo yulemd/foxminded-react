@@ -1,0 +1,19 @@
+@mixin font-prime{
+    color: $font-color-prime;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@mixin font-second{
+    color: $font-color-second;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@mixin input-style{
+    width: 100%;
+    height: 32px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 0 8px;
+}

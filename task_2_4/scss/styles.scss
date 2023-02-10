@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "variables";
+@import "mixins";
+
+body{
+    font-family: 'Poppins';
+    background: rgba(147,206,222,1);
+    background: -moz-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(65,113,158,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,1)), color-stop(100%, rgba(65,113,158,1)));
+    background: -webkit-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(65,113,158,1) 100%);
+    background: -o-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(65,113,158,1) 100%);
+    background: -ms-linear-gradient(left, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(65,113,158,1) 100%);
+    background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(65,113,158,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#41719e', GradientType=1 );
+}
+.wrapper{
+    width: 60%;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: $bg-color-white;
+    &__header{
+        width: 100%;
+        height: 72px;
+        background-color: $bg-color-grey;
+        border-start-start-radius: 12px;
+        border-start-end-radius: 12px;
+        border-bottom: 1px solid $border-color;
+        border-style: none none ridge none;
+    }
+    &__header-title{
+        color: $font-color-second;
+        font-weight: 600;
+        text-align: center;
+        line-height: 72px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .body-user{
+        display: flex;
+        justify-content: space-between;
+        margin: 28px 0 8px;
+        &__firstname{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            position: relative;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #firstname{
+                @include input-style();
+            }
+        }
+        &__lastname{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            position: relative;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #lastname{
+                @include input-style();
+            }
+        }
+    }
+    &__body-email{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 8px 0;
+        position: relative;
+            .label{
+            display: block;
+            margin-bottom: -2px;
+            @include font-prime();
+        }
+        #email{
+            @include input-style();
+        }
+    }
+    .body-password{
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        &__enter{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            position: relative;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #password{
+                 @include input-style();
+            }
+        }
+        &__confirm{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            position: relative;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #confirm{
+                @include input-style();
+            }
+        }
+    }
+    .body-radio{
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        &__gender{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            .gender{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 124px;
+                @include font-second();
+            }
+        }
+        &__hobbies{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            .label{
+                 display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            .hobbies{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-width: 260px;
+                @include font-second();
+                #music, #sports, #travel, #movies{
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+    .body-income{
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        &__sourse{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #sourse{
+                @include input-style();
+            }
+        }
+        &__value{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            .income{
+                display: flex;
+                justify-content: space-between;
+                font-size: 18px;
+                font-weight: 500;
+                color: $font-color-white;
+                #value{
+                     width: 75%;
+                    //@include input-style();
+                }
+                .income-value{
+                    width: 23%;
+                    height: 24;
+                    border-radius: 4px;
+                    padding-left: 2px;
+                    text-align: center;
+                    background-color: $bg-color-green;
+                }
+            }
+        }
+    }
+    .body-profile{
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        &__picture{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #picture{
+                color: $font-color-second;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        &__age{
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+            position: relative;
+            .label{
+                display: block;
+                margin-bottom: -2px;
+                @include font-prime();
+            }
+            #age{
+                @include input-style();
+            }
+        }
+    }
+    .body-bio{
+        display: flex;
+        flex-direction: column;
+        margin: 8px 0 28px;
+        &__title{
+            display: block;
+            margin-bottom: -2px;
+            @include font-prime();
+        }
+        &__area{
+            width: 100%;
+            height: 100px;
+            border-color: $border-color;
+            border-radius: 4px;
+        }
+    }
+    &__submit{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        background-color: $bg-color-grey;
+        border-end-start-radius: 12px;
+        border-end-end-radius: 12px;
+        border-top: 1px solid $border-color;
+        border-style: groove none none none;
+    }
+    &__submit-btn{
+        width: 88px;
+        height: 40px;
+        color: $font-color-white;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: $bg-color-green;
+        border-radius: 4px;
+        border: none;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    .error-message {
+        position: absolute;
+        top: 60px;
+        left: 4px;
+        border: 1px solid grey;
+        border-radius: 4px;
+        max-width: 400px;
+        padding: 4px;
+        background-color: white;
+        z-index: 999;
+    }
+}

@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background: rgb(147, 206, 222);
+  background: -moz-linear-gradient(left, rgb(147, 206, 222) 0%, rgb(117, 189, 209) 41%, rgb(65, 113, 158) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgb(147, 206, 222)), color-stop(41%, rgb(117, 189, 209)), color-stop(100%, rgb(65, 113, 158)));
+  background: -webkit-linear-gradient(left, rgb(147, 206, 222) 0%, rgb(117, 189, 209) 41%, rgb(65, 113, 158) 100%);
+  background: -o-linear-gradient(left, rgb(147, 206, 222) 0%, rgb(117, 189, 209) 41%, rgb(65, 113, 158) 100%);
+  background: -ms-linear-gradient(left, rgb(147, 206, 222) 0%, rgb(117, 189, 209) 41%, rgb(65, 113, 158) 100%);
+  background: linear-gradient(to right, rgb(147, 206, 222) 0%, rgb(117, 189, 209) 41%, rgb(65, 113, 158) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#93cede", endColorstr="#41719e", GradientType=1 );
+}
+
+.wrapper {
+  width: 60%;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: rgb(255, 248, 239);
+}
+.form__header {
+  width: 100%;
+  height: 72px;
+  background-color: rgb(221, 221, 221);
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  border-bottom: 1px solid rgb(173, 173, 173);
+  border-style: none none ridge none;
+}
+.form__header-title {
+  color: rgb(94, 94, 94);
+  font-weight: 600;
+  text-align: center;
+  line-height: 72px;
+}
+.form__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+.form .body-user {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 8px;
+}
+.form .body-user__firstname {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  position: relative;
+}
+.form .body-user__firstname .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-user__firstname #firstname {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-user__lastname {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  position: relative;
+}
+.form .body-user__lastname .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-user__lastname #lastname {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form__body-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 8px 0;
+  position: relative;
+}
+.form__body-email .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form__body-email #email {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-password {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.form .body-password__enter {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  position: relative;
+}
+.form .body-password__enter .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-password__enter #password {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-password__confirm {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  position: relative;
+}
+.form .body-password__confirm .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-password__confirm #confirm {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.form .body-radio__gender {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.form .body-radio__gender .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-radio__gender .gender {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 124px;
+  color: rgb(94, 94, 94);
+  font-size: 14px;
+  font-weight: 500;
+}
+.form .body-radio__hobbies {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.form .body-radio__hobbies .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-radio__hobbies .hobbies {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 260px;
+  color: rgb(94, 94, 94);
+  font-size: 14px;
+  font-weight: 500;
+}
+.form .body-radio__hobbies .hobbies #music, .form .body-radio__hobbies .hobbies #sports, .form .body-radio__hobbies .hobbies #travel, .form .body-radio__hobbies .hobbies #movies {
+  margin-right: 2px;
+}
+.form .body-income {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.form .body-income__sourse {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.form .body-income__sourse .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-income__sourse #sourse {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-income__value {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.form .body-income__value .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-income__value .income {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: antiquewhite;
+}
+.form .body-income__value .income #value {
+  width: 75%;
+}
+.form .body-income__value .income .income-value {
+  width: 23%;
+  height: 24;
+  border-radius: 4px;
+  padding-left: 2px;
+  text-align: center;
+  background-color: rgb(88, 165, 146);
+}
+.form .body-profile {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.form .body-profile__picture {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.form .body-profile__picture .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-profile__picture #picture {
+  color: rgb(94, 94, 94);
+  font-size: 15px;
+  font-weight: 600;
+}
+.form .body-profile__age {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  position: relative;
+}
+.form .body-profile__age .label {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-profile__age #age {
+  width: 100%;
+  height: 32px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 4px;
+  padding: 0 8px;
+}
+.form .body-bio {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 28px;
+}
+.form .body-bio__title {
+  display: block;
+  margin-bottom: -2px;
+  color: rgb(88, 165, 146);
+  font-size: 16px;
+  font-weight: 500;
+}
+.form .body-bio__area {
+  width: 100%;
+  height: 100px;
+  border-color: rgb(173, 173, 173);
+  border-radius: 4px;
+}
+.form__submit {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(221, 221, 221);
+  border-end-start-radius: 12px;
+  border-end-end-radius: 12px;
+  border-top: 1px solid rgb(173, 173, 173);
+  border-style: groove none none none;
+}
+.form__submit-btn {
+  width: 88px;
+  height: 40px;
+  color: antiquewhite;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(88, 165, 146);
+  border-radius: 4px;
+  border: none;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.form .error-message {
+  position: absolute;
+  top: 60px;
+  left: 4px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  max-width: 400px;
+  padding: 4px;
+  background-color: white;
+  z-index: 999;
+}
+
+/*# sourceMappingURL=styles.css.map */

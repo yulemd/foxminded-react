@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fonts/poppins.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="javascript: document.querySelector('input[type='submit']').addEventListener('submit', (e) => {e.preventDefault();});" class="form" method="post" name="Account creating" target="_self">
+            <div class="form__header">
+                <h1 class="form__header-title">Create Account</h1>
+            </div>
+            <div class="form__body">
+                <div class="form__body-user body-user">
+                    <div class="body-user__firstname">
+                        <label for="firstname" class="label">First name <span>*</span></label>
+                        <input type="text" name="first_name" id="firstname" placeholder="enter your first name" title="Please, enter your name">
+                    </div>
+                    <div class="body-user__lastname">
+                        <label for="lastname" class="label">Last name</label>
+                        <input type="text" name="last_name" id="lastname" placeholder="enter your last name" title="Please, enter your name">
+                    </div>
+                </div>
+                <div class="form__body-email">
+                    <label for="email" class="label">Email <span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="enter your email" title="Please, enter your Email adress">
+                </div>
+                <div class="form__body-password body-password">
+                    <div class="body-password__enter">
+                        <label for="password" class="label">Password <span>*</span></label>
+                        <input type="password" name="password" id="password" placeholder="enter your password" title="Password should contain at least 8 characters, contains letters, at least one letter in upper case, contains digits and should not contains spaces">
+                    </div>
+                    <div class="body-password__confirm">
+                        <label for="confirm" class="label">Confirm password <span>*</span></label>
+                        <input type="password" name="confirm" id="confirm" placeholder="enter your password again" title="Please, confirm password">
+                    </div>
+                </div>
+                <div class="form__body-radio body-radio">
+                    <div class="body-radio__gender">
+                        <label for="gender" class="label">Gender:</label>
+                        <div class="gender">
+                            <div><input type="radio" name="gender" id="male"> Male</div>
+                            <div><input type="radio" name="gender" id="female"> Female</div>
+                        </div>
+                    </div>
+                    <div class="body-radio__hobbies">
+                        <label for="" class="label">Hobbies</label>
+                        <div class="hobbies">
+                            <div><input type="checkbox" name="hobbies" id="music">Music</div>
+                            <div><input type="checkbox" name="hobbies" id="sports">Sports</div>
+                            <div><input type="checkbox" name="hobbies" id="travel">Travel</div>
+                            <div><input type="checkbox" name="hobbies" id="movies">Movies</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__body-income body-income">
+                    <div class="body-income__sourse">
+                        <label for="sourse" class="label">Sourse of income:</label>
+                        <select name="sourse" id="sourse">
+                            <option value="employed">Employed</option>
+                            <option value="employed">Employed</option>
+                            <option value="employed">Employed</option>
+                            <option value="employed">Employed</option>
+                            <option value="employed">Employed</option>
+                        </select>
+                    </div>
+                    <div class="body-income__value">
+                        <label for="value" class="label">Income</label>
+                        <div class="income">
+                            <input  type="range" min="20" max="200" value="20" oninput="rangeValue.innerText = this.value" name="value" id="value">
+                            <p class="income-value"><span id="rangeValue">20</span>K</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__body-profile body-profile">
+                    <div class="body-profile__picture">
+                        <label for="picture" class="label">Upload Profile Picture</label>
+                        <input type="file" name="picure" id="picture">
+                    </div>
+                    <div class="body-profile__age">
+                        <label for="age" class="label">Age</label>
+                        <input type="text" name="age" id="age" placeholder="18" title="Please, enter your age">
+                    </div>
+                </div>
+                <div class="form__body-bio body-bio">
+                    <label for="textarea" class="body-bio__title">Bio</label>
+                    <textarea name="bio" value="bio" class="body-bio__area"></textarea>
+                </div>
+            </div>
+            <div class="form__submit">
+                <input type="submit" class="form__submit-btn" value="Create">   
+            </div>
+        </form>
+    </div>
+    <script defer type="module" src="js/main.js"></script>
+</body>
+</html>
