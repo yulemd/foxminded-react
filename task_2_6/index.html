@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo-List</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="todo__container">
+      <h1 class="todo__title">Grocery Bud</h1>
+      <form class="todo__item item">
+        <input 
+          type="text" 
+          class="item__input" 
+          placeholder="add item"
+          maxlength="40"
+        >
+        <button type="submit" class="item__edit">Edit</button>
+      </form>
+      <ul class="todo__list list">
+        
+      </ul>
+      <button class="todo__clear">Clear items</button>
+    </div>
+  </div>
+  <script type="module" src="index.ts"></script>
+</body>
+</html>

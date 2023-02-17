@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+  padding-top: 120px;
+}
+.todo__container {
+  width: 420px;
+  height: fit-content;
+  margin: auto;
+  padding: 32px 0 20px;
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.todo__title {
+  color: rgb(44, 44, 44);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.todo__item {
+  width: 380px;
+  display: flex;
+  margin: 16px 0 28px;
+  position: relative;
+}
+.item__input {
+  width: 308px;
+  height: 24px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  border-radius: 6px 0 0 6px;
+  padding-left: 8px;
+}
+.item__input:focus {
+  outline: thin solid;
+}
+.item__edit {
+  width: 72px;
+  height: 24px;
+  background-color: rgb(93, 163, 221);
+  border: none;
+  border-radius: 0 6px 6px 0;
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.item__edit:hover {
+  border-top: 1px solid rgb(44, 44, 44);
+  border-right: 1px solid rgb(44, 44, 44);
+  border-bottom: 1px solid rgb(44, 44, 44);
+  position: absolute;
+  top: -1px;
+  right: 0;
+}
+.todo__list {
+  list-style: none;
+  width: 360px;
+  color: rgb(44, 44, 44);
+  font-size: 14px;
+  font-weight: 500;
+}
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.list__checkbox {
+  margin-right: 12px;
+}
+.list__remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.list__img {
+  width: 16px;
+  height: 16px;
+}
+.todo__clear {
+  border: none;
+  background: none;
+  margin-top: 8px;
+  color: rgb(255, 123, 0);
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.todo__clear:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 6px;
+}
