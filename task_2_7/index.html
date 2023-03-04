@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries List Page</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="header__title">Where in the world?</h1>
+      <div class="header__toggle">
+        <img src="img/dark_mode_icon.svg" alt="icon" class="header__icon">
+        <button class="header__button">Dark mode</button>
+      </div>
+    </header>
+    <nav class="menu">
+      <input type="text" class="menu__search" placeholder="Search for a country...">
+      <button class="menu__searchBtn">
+        <img src="img/find.svg" alt="icon" class="menu__searchIcon">
+      </button>
+      <select name="filter" id="region-filter" class="menu__selection">
+        <option value="default" disabled>Filter by Region</option>
+        <option value="all">All</option>
+        <option value="Europe">Europe</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Africa">Africa</option>
+        <option value="Oceania">Oceania</option>
+      </select>
+    </nav>
+    <ul class="list">
+      
+    </ul>
+  </div>
+  <script type="module" src="index.ts"></script>
+</body>
+</html>
