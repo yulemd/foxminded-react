@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfy-Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="darkened"></div>
+  <div class="container">
+    <header class="header">
+      <ul class="header__nav">
+        <li class="header__li header-white"><a href="#">Home</a></li>
+        <li class="header__li header-white"><a href="pages/products.html">Products</a></li>
+        <li class="header__li header-white"><a href="pages/about.html">About</a></li>
+      </ul>
+      <p class="header__logo header-white"><a href="#">comfy</a></p>
+      <div class="header__cart">
+        <img src="img/cart-white.svg" alt="" class="cart__icon">
+        <div class="cart__count">0</div>
+      </div>
+    </header>
+  </div>
+
+  <section class="modal">
+    <div class="modal__exit">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="modal__main">
+      <p class="modal__title">Your Bag</p>
+      <ul class="modal__list">
+        
+      </ul>
+    </div>
+    <div class="modal__footer">
+      <p class="modal__totalprice">Total: $</p>
+      <button class="modal__checkout">Checkout</button>
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="container">
+      <h1 class="main__title">Rest, Relax, Unwind</h1>
+      <p class="main__text">Embrace your choices - we do</p>
+      <button class="main__btn"><a href="pages/products.html">Show now</a></button>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="featured">
+      <h2 class="featured__title"><span>/</span> Featured</h2>
+      <ul class="featured__list">
+        
+      </ul>
+      <button class="featured__btn"><a href="pages/products.html">All products</a></button>
+    </section>
+  </div>
+
+  <script type="module" src="index.ts"></script>
+</body>
+</html>

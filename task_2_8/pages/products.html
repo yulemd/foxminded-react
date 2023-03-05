@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comfy-Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="darkened"></div>
+  <div class="container">
+    <header class="header">
+      <ul class="header__nav">
+        <li class="header__li"><a href="../index.html">Home</a></li>
+        <li class="header__li"><a href="#">Products</a></li>
+        <li class="header__li"><a href="about.html">About</a></li>
+      </ul>
+      <p class="header__logo"><a href="../index.html">comfy</a></p>
+      <div class="header__cart">
+        <img src="../img/cart-black.svg" alt="" class="cart__icon">
+        <div class="cart__count">0</div>
+      </div>
+    </header>
+  </div>
+
+  <section class="modal">
+    <div class="modal__exit">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="modal__main">
+      <p class="modal__title">Your Bag</p>
+      <ul class="modal__list">
+        
+      </ul>
+    </div>
+    <div class="modal__footer">
+      <p class="modal__totalprice">Total: $</p>
+      <button class="modal__checkout">Checkout</button>
+    </div>
+  </section>
+
+  <section class="navi">
+    <div class="container">
+      <p class="navi__info">Home / Products</p>
+    </div>
+  </section>
+    
+  <div class="container">
+    <section class="shop">
+      <div class="shop__sidebar sidebar">
+        <input type="search" class="sidebar__search" placeholder="Search...">
+        <p class="sidebar__name">Category</p>
+        <ul class="sidebar__list list">
+          
+        </ul>
+        <div class="sidebar__price price">
+          <label for="price-value" class="price__label">Price</label>
+          <div class="price__input">
+              <input  type="range" min="20" max="1750" step="10" value="1750" oninput="rangeValue.innerText = this.value" name="price-value" id="price-value">
+              <p class="price__value">Value: $<span id="rangeValue">1750</span></p>
+          </div>
+        </div>
+      </div>
+      <ul class="shop__list">
+
+      </ul>
+    </section>
+  </div>
+
+  <script type="module" src="../index.ts"></script>
+</body>
+</html>
