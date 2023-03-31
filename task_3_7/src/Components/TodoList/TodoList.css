@@ -1,0 +1,48 @@
+.todoPageElement {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pageList {
+  text-align: start;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(77, 77, 77);
+  border-radius: 12px;
+  margin-bottom: 4px;
+  padding: 4px;
+}
+
+.todoTitle {
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.todoTitle-blue {
+  color: rgb(135, 135, 255);
+}
+
+.todoToggle {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.todoToggle-blue {
+  color: rgb(97, 97, 255);
+}
+
+.todoToggle-red {
+  color: rgb(255, 69, 69);
+}

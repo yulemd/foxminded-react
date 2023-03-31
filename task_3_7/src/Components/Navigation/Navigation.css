@@ -1,0 +1,15 @@
+nav ul {
+  list-style: none;
+  display: flex;
+  width: 800px;
+  justify-content: space-evenly;
+}
+
+a {
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+}
+
+.active {
+  color: yellowgreen;
+}

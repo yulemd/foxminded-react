@@ -1,0 +1,76 @@
+.userData {
+  width: 800px;
+  min-height: 80px;
+}
+
+.userData__list {
+  background-color: rgb(77, 77, 77);
+  border-radius: 12px;
+  margin-top: 8px;
+  padding: 20px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.userData__title {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userData__link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-size: 18px;
+}
+
+.userData__info {
+  width: 400px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.userData__info p {
+  text-align: start;
+  font-weight: 500;
+}
+
+.userData__info p span{
+  color: rgb(0, 140, 255);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.userData__icon {
+  width: 64px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.icon-username {
+  background-image: url("./icons/username-icon.svg");
+}
+
+.icon-email {
+  background-image: url("./icons/email-icon.svg");
+}
+
+.icon-phone {
+  background-image: url("./icons/phone-icon.svg");
+}
+
+.icon-website {
+  height: 28px;
+  background-image: url("./icons/website-icon.svg");
+}
+
+.icon-company {
+  background-image: url("./icons/company-icon.svg");
+}
