@@ -1,0 +1,17 @@
+.todos__tab {
+  width: 760px;
+  border-radius: 12px;
+  padding-top: 28px;
+}
+
+.todosList {
+  margin: auto;
+  width: 760px;
+  border-radius: 12px 0 12px 12px;
+  padding: 28px 20px 20px;
+  margin-top: -25px;
+}
+
+.todosList-bg {
+  background-color: rgb(130, 130, 130);
+}

@@ -1,0 +1,66 @@
+.userTabs {
+  width: 760px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 88px;
+  margin-bottom: 16px;
+}
+
+.userTabs li {
+  width: 220px;
+  height: 24px;
+  border-radius: 12px 0 0 0;
+}
+
+.userTabs__info {
+  background-color: rgb(100, 100, 100);
+  cursor: pointer;
+
+}
+
+.userTabs__posts {
+  background-color: rgb(115, 115, 115);
+  margin-left: -20px;
+  cursor: pointer;
+
+}
+
+.userTabs__todos {
+  background-color: rgb(130, 130, 130);
+  margin-left: -20px;
+  cursor: pointer;
+
+}
+
+.userTabs__albums {
+  background-color: rgb(145, 145, 145);
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+.userTabs__link {
+  text-decoration: none;
+  color: white;
+}
+
+.userTabs__link-active {
+  color: yellowgreen;
+}
+
+.userData__link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  font-size: 18px;
+}
+
+.tab {
+  width: 760px;
+  border-radius: 12px;
+  padding-top: 16px;
+}

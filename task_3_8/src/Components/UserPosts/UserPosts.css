@@ -1,0 +1,22 @@
+.postsList {
+  margin: auto;
+  width: 720px;
+}
+
+.posts__tab {
+  width: 760px;
+  border-radius: 12px;
+  padding-top: 28px;
+}
+
+.postsList {
+  margin: auto;
+  width: 760px;
+  border-radius: 12px 0 12px 12px;
+  padding: 20px;
+  margin-top: -25px;
+}
+
+.postsList-bg {
+  background-color: rgb(115, 115, 115);
+}
