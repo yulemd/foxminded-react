@@ -6,3 +6,4 @@ task_2_6 - Todo List (TS) <br>
 task_2_7 - Countries List Page (TS) <br>
 task_2_8 - Online Store (TS) <br>
 task_3_7 - React App (TS) <br>
+task_3_8 - React App (TS) Final
